@@ -570,6 +570,52 @@ footer p {
     }
 }
 
+@media (max-width: 405px) {
+    body {
+        min-width: 100vw;
+    }
+    header {
+        gap:0;
+    }
+    .top {
+        margin-bottom: -450px;
+    }
+}
+@media (max-width: 284px) {
+    body {
+        min-width: 90vw;
+    }
+    .cv {
+        width: 32px;
+        font-size: 0.7rem;
+    }
+    .languageEN {
+        font-size: 0.7rem;
+    }
+    .bottom .bottomButtons {
+        gap: 37px;
+    }
+    .bottom .projects img {
+        position: absolute;
+        width: 90vw;
+        height: 90vw;
+    }
+    .bottom .projects .p1 span,
+    .bottom .projects .p2 span,
+    .bottom .projects .p3 span,
+    .bottom .projects .p4 span,
+    .bottom .projects .p5 span,
+    .bottom .projects .p6 span,
+    .bottom .projects .p7 span,
+    .bottom .projects .p8 span,
+    .bottom .projects .p9 span {
+    width: 90vw;
+    height: 90vw;
+    display: flex;
+    margin: 0 0 0 1.5%;
+}
+}
+
 /* Typewriter effect */
 @keyframes typing {
     0.0000%, 27.3488% { content: ""; }
