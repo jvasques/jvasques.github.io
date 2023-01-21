@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>João Paulo Vasques</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+<body onload="calcAge();autoThemeMode();">
+    <header>
+        <h1>João Paulo Vasques</h1>
+        <div class="headerCenter" id="headerCenter"> <img src="./assets/code.svg" alt=""> I'm a&nbsp;<span class="typewriter"></span></div>
+        <div class="headerButtons">
+            <button class="cv" type="submit" onclick="window.open('./assets/pdf/curriculumJoaoPauloVasques.pdf')" title="Download Curriculum Vitae">↓ CV ↓</button>
+            <button class="languageEN" type="submit" onclick="window.location.href=('../en/')"  title="Toggle to English">EN</button>
+        </div>
+    </header>
+    <div class="control">
+        <div class="top">
+            <div class="topA">
+                <a href="#img1">
+                <div class="topPhoto">
+                    <img src="./assets/joao.jpg" alt="Foto de João Paulo Vasques" />
+                    <svg viewbox="5 5 90 90" class="fullDisplaySpinner">
+                        <circle cx="50" cy="50" r="40" />
+                    </svg>
+                    <svg viewbox="5 5 90 90" class="smallDisplaySpinner">
+                        <circle cx="50" cy="50" r="35" />
+                    </svg>
+                </div></a>
+                <a href="#" class="lightbox" id="img1">
+                    <span style="background-image: url('./assets/joao.jpg')"></span>
+                  </a> 
+            </div>
+            <div class="topB">     
+                <p>vasquesjp
+                    <span title="Mudar para tema Escuro">
+                        <svg fill="#121212" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" id="moon" onclick="toggleThemeMode();">
+                            <path d="M10.895 7.574c0 7.55 5.179 13.67 11.567 13.67 1.588 0 3.101-0.38 4.479-1.063-1.695 4.46-5.996 7.636-11.051 7.636-6.533 0-11.83-5.297-11.83-11.83 0-4.82 2.888-8.959 7.023-10.803-0.116 0.778-0.188 1.573-0.188 2.39z" ></path>
+                        </svg>
+                    </span>
+                    <span title="Mudar para tema Claro">
+                        <svg fill="#FFFFFF" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" id="sun" onclick="toggleThemeMode();">
+                            <path d="M8.031 16.5c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5-3.357-7.5-7.5-7.5c-4.142 0-7.5 3.357-7.5 7.5zM15.531 3.75l-2.109 4.219h4.219l-2.11-4.219zM24.543 7.457l-4.475 1.491 2.982 2.983 1.493-4.474zM10.994 8.948l-4.474-1.491 1.491 4.475 2.983-2.984zM6.969 14.359l-4.219 2.11 4.219 2.109v-4.219zM24.031 18.641l4.219-2.109-4.219-2.109v4.218zM15.531 29.25l2.109-4.219h-4.219l2.11 4.219zM20.068 24.052l4.475 1.491-1.492-4.475-2.983 2.984zM6.52 25.543l4.475-1.491-2.983-2.983-1.492 4.474z"></path>
+                        </svg>
+                    </span>
+                </p>
+                <div class="topButtons">
+                    <button class="gitHub" type="submit" onclick="window.open('https://github.com/Vasquesjp')" title="Acessar meu GitHub">GitHub</button>
+                    <button class="linkedin"  type="submit" onclick="window.open('https://www.linkedin.com/in/jpvasques/')"  title="Acessar meu LinkedIn">LinkedIn</button>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <img src="./assets/html5.svg" id="html5" alt="HTML5 Logo" title="HTML5">
+            <img src="./assets/css3.svg" alt="CSS3 Logo" title="CSS3">
+            <img src="./assets/javascript.svg" alt="Javascript Logo" title="Javascript">
+            <img src="./assets/react.svg" alt="React Logo" title="ReactJs">
+            <img src="./assets/nodejs.svg" alt="NodeJS Logo" title="NodeJS *Coming Soon*">
+            <img src="./assets/git.svg" alt="Git Logo" title="Git">
+            <img src="./assets/figma.svg" alt="Figma Logo" title="Figma">
+        </div>
+        <div class="bottom">
+            <div class="bottomButtons">
+                <button class="projectsButton noFocus focus" onClick="toggleButton(this);projectsButton1();">
+                    <svg fill="#000000" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <g><path d="M2,9H9V2H2ZM4,4H7V7H4Zm7-2V9h7V2Zm5,5H13V4h3ZM2,18H9V11H2Zm2-5H7v3H4Zm7,5h7V11H11Zm2-5h3v3H13Z"/>
+                        </g>
+                    </svg> 
+                    PROJETOS
+                </button>
+                <button class="aboutButton noFocus" onClick="toggleButton(this);aboutButton1();">
+                    <svg width="800px" height="800px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="drop" transform="translate(42.666667, 42.666667)">
+                            <path d="M213.333333,3.55271368e-14 C331.154987,3.55271368e-14 426.666667,95.51168 426.666667,213.333333 C426.666667,331.153707 331.154987,426.666667 213.333333,426.666667 C95.51296,426.666667 3.55271368e-14,331.153707 3.55271368e-14,213.333333 C3.55271368e-14,95.51168 95.51296,3.55271368e-14 213.333333,3.55271368e-14 Z M234.713387,192 L192.04672,192 L192.04672,320 L234.713387,320 L234.713387,192 Z M213.55008,101.333333 C197.99616,101.333333 186.713387,112.5536 186.713387,127.704107 C186.713387,143.46752 197.698773,154.666667 213.55008,154.666667 C228.785067,154.666667 240.04672,143.46752 240.04672,128 C240.04672,112.5536 228.785067,101.333333 213.55008,101.333333 Z" id="Shape"></path>
+                        </g>
+                    </svg>
+                    SOBRE
+                </button>
+                <button class="contactButton noFocus" onClick="toggleButton(this);contactButton1();">
+                    <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 228 260" enable-background="new 0 0 228 260" xml:space="preserve">
+                        <path d="M214,2H26v36h18c3.314,0,6,2.686,6,6s-2.686,6-6,6H26H8c-3.314,0-6,2.686-6,6s2.686,6,6,6h18v29h18c3.314,0,6,2.686,6,6 s-2.686,6-6,6H26H8c-3.314,0-6,2.686-6,6s2.686,6,6,6h18v30h18c3.314,0,6,2.686,6,6c0,3.314-2.686,6-6,6H26H8c-3.314,0-6,2.686-6,6 c0,3.314,2.686,6,6,6h18v29h18c3.314,0,6,2.686,6,6c0,3.314-2.686,6-6,6H26H8c-3.314,0-6,2.686-6,6c0,3.314,2.686,6,6,6h18v36h188 c6.627,0,12-5.373,12-12V14C226,7.373,220.627,2,214,2z M129,77.022c12.715,0,23.023,10.308,23.023,23.022 c0,12.715-10.308,23.023-23.023,23.023s-23.023-10.307-23.023-23.022C105.977,87.33,116.285,77.022,129,77.022z M169,178H88v-27.386 C88,138.726,97.726,129,109.614,129h37.772c11.888,0,21.614,9.726,21.614,21.614V178z"/>
+                    </svg>
+                    CONTATO
+                </button>
+            </div>
+            <div class="projects" id="projects" style="display:flex;">    
+                <div class="p1">
+                    <img src="./assets/projects/MeuSite.webp" alt="" class="projects proj1" />
+                    <span class="sP1">
+                        <h1>MEU SITE</h1>
+                        <p>Este site em que apresento meus projetos. Desenvolvido em HTML5, CSS3 e JS Vanilla. Surgiu da idéia de fazer uma página 'clone' do Instagram para praticar as tecnologias. Totalmente responsivo e disponível em duas linguas (portugês-br e inglês).</p>
+                        <button>DEPLOY</button>
+                        <button>REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p2">
+                    <img src="./assets/projects/formulario.webp" alt="" class="projects proj2" />
+                    <span class="sP2">
+                        <h1>Formulário HTML</h1>
+                        <p>Formulário baseado em um projeto da trilha Explorer da plataforma Rocketseat. Desenvolvido com as tecnologias HTML5, CSS3 e JS. Implementada o plugin 'int-tel-input' para o campo de telefone e utilizado o CSS para animações na página.</p>
+                        <button type="submit" onclick="window.open('https://vasquesjp.github.io/formularioBTTech/')">DEPLOY</button>
+                        <button type="submit" onclick="window.open('https://github.com/Vasquesjp/formularioBTTech')">REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p3">
+                    <img src="./assets/projects/ayrton.webp" alt="" class="projects proj3" />
+                    <span class="sP3">
+                        <h1>Tributo a Ayrton Senna</h1>
+                        <p>Projeto pessoal (ainda em progresso) desenvolvido como forma de homenagear o piloto de F1 Ayrton Senna. Tecnologias Utilizadas: HTML5, CSS3 e JS.</p>
+                        <button type="submit" onclick="window.open('https://vasquesjp.github.io/AyrtonSenna/')">DEPLOY</button>
+                        <button type="submit" onclick="window.open('https://github.com/Vasquesjp/AyrtonSenna')">REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p4">
+                    <img src="./assets/projects/NLWCopa.webp" alt="" class="projects proj4" />
+                    <span class="sP4">
+                        <h1>NLW COPA 2022</h1>
+                        <p>Projeto construído durante o evento Next Level Week da Rocketseat, com as tecnologias HTML5, CSS3 e JS. Trata-se do calendário dos jogos do Brasil na Fase de Grupos da Copa do Mundo de 2022. Foi utilizado o JS para manipulação do DOM e implementei um seletor de cores do tema da página.</p>
+                        <button type="submit" onclick="window.open('https://vasquesjp.github.io/NLW-COPA2022/')">DEPLOY</button>
+                        <button type="submit" onclick="window.open('https://github.com/Vasquesjp/NLW-COPA2022')">REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p5">
+                    <img src="./assets/projects/HoraAgora.webp" alt="" class="projects proj5" />
+                    <span class="sP5">
+                        <h1>HORA AGORA</h1>
+                        <p>Projeto construído durante o curso de javascript da plataforma Curso em Vídeo, com as tecnologias HTML5, CSS3 e JS. A página obtem a hora local, é extraída e formatada no javascript e exibida na tela junto com uma imagem e background que mudam conforme o período do dia (manhã, tarde ou noite).</p>
+                        <button type="submit" onclick="window.open('https://vasquesjp.github.io/HoraAgora/')">DEPLOY</button>
+                        <button type="submit" onclick="window.open('https://github.com/Vasquesjp/HoraAgora')">REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p6">
+                    <img src="./assets/projects/NLWeSPORTS.webp" alt="" class="projects proj6" />
+                    <span class="sP6">
+                        <h1>NLW eSPORTS</h1>
+                        <p>Projeto construído durante o evento Next Level Week da Rocketseat, com as tecnologias HTML5 e CSS3. </p>
+                        <button type="submit" onclick="window.open('https://vasquesjp.github.io/NLW/')">DEPLOY</button>
+                        <button type="submit" onclick="window.open('https://github.com/Vasquesjp/NLW')">REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p7">
+                    <img src="./assets/projects/coming-soon.webp" alt="" class="projects proj7" />
+                    <span class="sP7">
+                        <h1>EM BREVE</h1>
+                        <p>Em breve um novo projeto fará parte do meu portfólio e será exibido aqui!</p>
+                        <button>DEPLOY</button>
+                        <button>REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p8">
+                    <img src="./assets/projects/coming-soon.webp" alt="" class="projects proj8" />
+                    <span class="sP8">
+                        <h1>EM BREVE</h1>
+                        <p>Em breve um novo projeto fará parte do meu portfólio e será exibido aqui!</p>
+                        <button>DEPLOY</button>
+                        <button>REPOSITÓRIO</button>
+                    </span>
+                </div>
+                <div class="p9">
+                    <img src="./assets/projects/coming-soon.webp" alt="" class="projects proj9" />
+                    <span class="sP9">
+                        <h1>EM BREVE</h1>
+                        <p>Em breve um novo projeto fará parte do meu portfólio e será exibido aqui!</p>
+                        <button>DEPLOY</button>
+                        <button>REPOSITÓRIO</button>
+                    </span>
+                </div>
+             </div>
+            <div class="about" id="about" style="display:none;">    
+                <p>Olá, meu nome é João Paulo Vasques, tenho <span id="showAge"></span> anos e atualmente estou estudando programação front-end. Sempre fui fascinado por como as coisas funcionam, e essa curiosidade me levou a seguir a carreira de tecnologia. Minha paixão pela tecnologia começou na infância, em  quando gerenciei meu próprio servidor MMORPG usando PHP e MySQL. Passei minha adolescência programando jogos na engine Game Maker. </p>
+                <p>Aos 19 anos fui pai e precisei tomar outros caminhos, pois a programação para mim era somente um hobby. Passei pelas áreas da construção civil (2 períodos de Técnico em Edficações), eletricidade (Técnico em Eletrotécnica, onde minhas matérias preferidas envolviam programação Ladder e Arduíno) e trabalhei na área de telefonia (programação de PABX). </p>
+                <p>Em 2022 decidi que estar na área de tecnologia é o que eu quero para o meu futuro e me apaixonei pelo desenvolvimento Front-end, já tinha alguma noção de HTML e CSS devido ter mantido varios sites e blogues para divulgar meus jogos e estou me aprofundando cada dia mais no mar que é o Javascript. Estou animado para continuar minha jornada no campo da tecnologia e ver onde isso me leva.</p>
+            </div>
+            <div class="contact" id="contact" style="display:none;">    
+                <div class="container">
+                    <form target="_blank" action="https://formsubmit.co/vasquesjp@hotmail.com" method="POST" class="formContact">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/mailSend.html" />
+                        <h1>FALE COMIGO</h1>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Nome Completo" title="Campo Obrigatório" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" title="Campo Obrigatório" required>
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_subject" value="CONTATO PELO SITE!">
+                                </div>
+                            </div>
+                        </div>
+                      <div class="form-group">
+                        <textarea placeholder="Sua mensagem" class="form-control" name="message" rows="10" title="Deixe aqui sua mensagem ou elogio." required></textarea>
+                      </div>
+                      <button type="submit" class="btnForm" title="Clique para enviar sua mensagem">Enviar Mensagem</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <footer><p>Português (Brasil) </p><p><span id="currentYear"></span> Desenvolvido por João Paulo Vasques.</p></footer>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
