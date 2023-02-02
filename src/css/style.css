@@ -25,6 +25,7 @@ body {
     background-color: var(--body-color);
     font-family: 'Segoe UI';
     min-width: 405px;
+    overflow-y: scroll;
 }
 .control {
     max-width: 900px;
