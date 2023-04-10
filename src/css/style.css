@@ -33,6 +33,7 @@ body {
 }
 .shows {
     opacity: 0;
+    transition-duration: 0.5s;
 }
 
 header {
@@ -91,10 +92,12 @@ header h1 {
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 1.125rem;
+    transition-duration: 0.5s;
 }
 .cv:hover {
     cursor: pointer;
     background-color: #1877F2;
+    transition-duration: 0.5s;
 }
 
 .languagePT {
@@ -166,10 +169,12 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition-duration: 0.8s;
 }
 
 .topPhoto:hover img{
     transform: translate(-50%, -50%) scale(1.05);
+    transition-duration: 0.8s;
 }
 
 .topPhoto svg {
@@ -230,6 +235,7 @@ header h1 {
     line-height: 1.125rem;
     font-weight: 600;
     color: #000;
+    transition-duration: 0.5s;
 
 }
 .topButtons .linkedin {
@@ -244,12 +250,14 @@ header h1 {
     line-height: 1.125rem;
     font-weight: 600;
     color: #000;
+    transition-duration: 0.5s;
 
 }
 .topButtons .gitHub:hover, 
 .topButtons .linkedin:hover {
     cursor: pointer;
     background-color: #DBDBDB;
+    transition-duration: 0.5s;
 }
 
 .middle {
@@ -265,6 +273,7 @@ header h1 {
     margin: 10px 10px 0 ;
     border: 2px dashed var(--h1-color);
     border-radius: 50%;
+    transition-duration: 0.5s;
 }
 .middle img:nth-child(n+1){
 opacity: 0.9;}
@@ -278,6 +287,7 @@ opacity: 0.9;}
     opacity: 0.75;}
 .middle img:hover {
     opacity: 1;
+    transition-duration: 0.5s;
 }
 
 .bottom {
@@ -302,10 +312,12 @@ opacity: 0.9;}
     letter-spacing: 0.0625rem;
     background: none;
     color: #8E8E8E;
+    transition-duration: 1s;
 }
 .bottom .bottomButtons .focus {
     color: var(--h1-color);
     border-top: 1px solid var(--h1-color);
+    transition-duration: 1s;
 }
 .bottom .bottomButtons .focus svg{
     fill: var(--h1-color);
@@ -356,6 +368,7 @@ opacity: 0.9;}
     font-size: 0.9rem;
     cursor: pointer;
     margin: 0 0 0 1.5%;
+    transition-duration: 1.5s;
 }
 .bottom .projects .p1:hover span,
 .bottom .projects .p2:hover span,
@@ -368,6 +381,7 @@ opacity: 0.9;}
 .bottom .projects .p9:hover span {
     opacity: 1;
     visibility: visible;
+    transition-duration: 1s;
 }
 .bottom .projects .p1 button,
 .bottom .projects .p2 button,
@@ -383,6 +397,7 @@ opacity: 0.9;}
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0);
     color: #FFF;
+    transition-duration: 1s;
 }
 .bottom .projects .p1 button:hover,
 .bottom .projects .p2 button:hover,
@@ -396,6 +411,7 @@ opacity: 0.9;}
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     color: #000;
+    transition-duration: 1s;
 }
 
 .bottom .about p {
@@ -431,7 +447,6 @@ opacity: 0.9;}
     margin: 10px;
     font-size: 0.9rem;
     line-height: 32px;
-
     color: #8E8E8E;
 }
 .contact .container input:focus,
@@ -460,9 +475,12 @@ opacity: 0.9;}
     line-height: 1.125rem;
     font-weight: 600;
     color: #000;
+    transition-duration: 0.5s;
 }
 .contact .container .formContact button:hover {
     cursor: pointer;
+    background-color: #DBDBDB;
+    transition-duration: 0.5s;
 }
 
 footer {
@@ -657,32 +675,32 @@ footer p {
     82.0465%, 93.4419% { content: "hum"; }
     83.1860%, 92.3023% { content: "huma"; }
     84.3256%, 91.1628% { content: "human"; }
-  }
-  @keyframes blink {
+}
+@keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
-  }
-  .typewriter {
+}
+.typewriter {
     --caret: currentcolor;
-  }
-  .typewriter::before {
+}
+.typewriter::before {
     content: "";
     animation: typing 13.5s infinite;
-  }
-  .typewriter::after {
+}
+.typewriter::after {
     content: "";
     border-right: 1px solid var(--caret);
     animation: blink 0.5s linear infinite;
-  }
-  .typewriter.thick::after {
+}
+.typewriter.thick::after {
     border-right: 1ch solid var(--caret);
-  }
-  .typewriter.nocaret::after {
+}
+.typewriter.nocaret::after {
     border-right: 0;
-  }
-  @media (prefers-reduced-motion) {
+}
+@media (prefers-reduced-motion) {
     .typewriter::after {
-      animation: none;
+        animation: none;
     }
     
     @keyframes sequencePopup {
@@ -696,32 +714,28 @@ footer p {
       content: "developer";
       animation: sequencePopup 12s linear infinite;
     }
-  }
+}
   
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  * {
+*{
     scrollbar-width: auto;
     scrollbar-color: #8e8e8e var(--center-color);
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
     width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
+}
+*::-webkit-scrollbar-track {
     background: var(--center-color);
-  }
-
-  *::-webkit-scrollbar-thumb {
+}
+*::-webkit-scrollbar-thumb {
     background-color: #8e8e8e;
     border-radius: 10px;
     border: 3px double var(--center-color);
-  }
-
-  .lightbox {
-    /* Default to hidden */
+}
+.lightbox {
+/* Default to hidden */
     display: none;
   
     /* Overlay entire screen */
@@ -731,27 +745,18 @@ footer p {
     left: 0;
     right: 0;
     bottom: 0;
-    
-    /* A bit of padding around image */
     padding: 1em;
-  
-    /* Translucent background */
     background: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Unhide the lightbox when it's the target */
-  .lightbox:target {
+}
+.lightbox:target {
     display: block;
-  }
-  
-  .lightbox span {
-    /* Full width and height */
+}
+.lightbox span {
     display: block;
     width: 95%;
     height: 95%;
     margin: 0 auto;
-    /* Size and position background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}

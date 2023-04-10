@@ -86,11 +86,11 @@ function autoThemeMode() {
 $(window).on("load scroll", function(){
     $(".shows").each(function(){
         var el = $(this);
-        var eleHeight = el.outerHeight(); // altura da div
-        var eleTopo = el.offset().top; // distancia da div ao topo do documento
-        var scrlTopo = $(window).scrollTop(); // quanto foi rolada a janela
-        var distance = eleTopo-scrlTopo; // distancia da div ao topo da janela
-        var altJanela = window.innerHeight; // altura da janela
+        var eleHeight = el.outerHeight();
+        var eleTopo = el.offset().top;
+        var scrlTopo = $(window).scrollTop();
+        var distance = eleTopo-scrlTopo;
+        var altJanela = window.innerHeight;
         if(distance <= altJanela-(eleHeight/1.5)) {
             el.animate({ 'opacity': 1 }, 400);
         }
