@@ -21,7 +21,7 @@ function contactButton1() {
 
 const currentYear = new Date().getFullYear();
 const currentMonth = new Date().getMonth() + 1;
-const currentDay = new Date().getDay();
+const currentDay = new Date().getDate();
 const birthYear = 1996;
 const birthMonth = 4;
 const birthDay = 23;
@@ -29,9 +29,9 @@ let age = currentYear - birthYear;
 function calcAge() {
     if (currentMonth >= birthMonth && currentDay >= birthDay)
     {
-
+     
     } else {
-        age -= 1;
+        age = age - 1;
     }
     document.getElementById('showAge').innerHTML = `${age}` ;
 }

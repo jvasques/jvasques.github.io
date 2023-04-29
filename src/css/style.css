@@ -414,6 +414,11 @@ opacity: 0.9;}
     transition-duration: 1s;
 }
 
+.bottom .about,
+.bottom .contact {
+    display: none;
+}
+
 .bottom .about p {
     padding: 10px;
     text-align: center;
