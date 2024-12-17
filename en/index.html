@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="../src/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeZdZ4qAAAAAAFnCTVWo4PiZ47EdIng3vAcPRFi"></script>    
 </head>
 <body onload="calcAge();autoThemeMode();">
     <header>
@@ -206,25 +206,83 @@
             </div>
             <div class="contact" id="contact" style="display:none;">    
                 <div class="container">
-                    <form target="_blank" action="https://formsubmit.co/site@vasques.dev" method="POST" class="formContact">
-                        <input type="hidden" name="_next" value="https://jvasques.github.io/en/mailSend.html" />
-                        <h1>TALK ME</h1>
-                        <div class="form-group">
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="text" name="name" class="form-control" placeholder="Full Name" title="Required Field" required>
-                                </div>
-                                <div class="col">
-                                    <input type="email" name="email" class="form-control" placeholder="Email Address" title="Required Field" required>
-                                    <input type="hidden" name="_captcha" value="false">
-                                    <input type="hidden" name="_subject" value="CONTATO PELO SITE EN!">
-                                </div>
-                            </div>
-                        </div>
+                    <form
+                      target="_blank"
+                      action="https://formsubmit.co/site@vasques.dev"
+                      method="POST"
+                      class="formContact"
+                      id="contactForm"
+                    >
+                      <!-- Define o URL de redirecionamento após o envio -->
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="https://jvasques.github.io/mailSend.html"
+                      />
+        
+                      <h1>CONTACT ME</h1>
+        
                       <div class="form-group">
-                        <textarea placeholder="Your message" class="form-control" name="message" rows="10" title="Leave here your message or compliment." required></textarea>
+                        <div class="form-row">
+                          <div class="col">
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control"
+                              placeholder="Full Name"
+                              title="Required"
+                              required
+                            />
+                          </div>
+                          <div class="col">
+                            <input
+                              type="email"
+                              name="email"
+                              class="form-control"
+                              placeholder="Email"
+                              title="Required"
+                              required
+                            />
+                            <!-- Desabilita o captcha interno do FormSubmit -->
+                            <input type="hidden" name="_captcha" value="false" />
+                            <!-- Define o assunto do email enviado -->
+                            <input
+                              type="hidden"
+                              name="_subject"
+                              value="Site Contact!"
+                            />
+                          </div>
+                        </div>
                       </div>
-                      <button type="submit" class="btnForm" title="Click to send your message">Send Message</button>
+        
+                      <div class="form-group">
+                        <textarea
+                          placeholder="Your message"
+                          class="form-control"
+                          name="message"
+                          rows="10"
+                          title="Leave your message or compliment here."
+                          required
+                        ></textarea>
+                      </div>
+        
+                      <!-- Componente do reCAPTCHA -->
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="6LeZdZ4qAAAAAAFnCTVWo4PiZ47EdIng3vAcPRFi"
+                        data-callback="onCaptchaSuccess"
+                      ></div>
+        
+                      <!-- Botão de envio oculto inicialmente -->
+                      <button
+                        type="submit"
+                        class="btnForm"
+                        title="Click to send your message"
+                        id="submitBtn"
+                        style="display: none"
+                      >
+                        Send Message
+                      </button>
                     </form>
                   </div>
             </div>
