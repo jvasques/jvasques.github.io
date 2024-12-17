@@ -27,13 +27,10 @@ const birthMonth = 4;
 const birthDay = 23;
 let age = currentYear - birthYear;
 function calcAge() {
-    if (currentMonth >= birthMonth && currentDay >= birthDay)
-    {
-     
-    } else {
-        age = age - 1;
+    if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
+        age--;
     }
-    document.getElementById('showAge').innerHTML = `${age}` ;
+    document.getElementById('showAge').innerHTML = `${age}`;
 }
 
 document.getElementById('currentYear').innerHTML = `© ${currentYear}`;
